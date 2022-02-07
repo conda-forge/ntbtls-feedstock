@@ -1,6 +1,6 @@
 {% set name = "ntbtls" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "649fe74a311d13e43b16b26ebaa91665ddb632925b73902592eac3ed30519e17" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "d1d9c86fc31e8154657a4c01ec6da17628c75c0ea5d43388956305e3067c7d46" %}
 
 package:
   name: {{ name|lower }}
@@ -33,8 +33,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages {{ name }}  # [unix]
-    - conda inspect objects {{ name }}   # [osx]
 
 about:
   home: https://www.gnupg.org/software/ntbtls/index.html
