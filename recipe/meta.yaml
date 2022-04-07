@@ -1,6 +1,6 @@
 {% set name = "ntbtls" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "d1d9c86fc31e8154657a4c01ec6da17628c75c0ea5d43388956305e3067c7d46" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "8922181fef523b77b71625e562e4d69532278eabbd18bc74579dbe14135729ba" %}
 
 package:
   name: {{ name|lower }}
