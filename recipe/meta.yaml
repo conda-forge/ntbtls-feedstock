@@ -1,6 +1,6 @@
 {% set name = "ntbtls" %}
-{% set version = "0.1.2" %}
-{% set sha256 = "8240db84e50c2351b19eb8064bdfd4d25e3c157d37875c62e335df237d7bdce7" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "8922181fef523b77b71625e562e4d69532278eabbd18bc74579dbe14135729ba" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script:
     - ./configure --prefix=$PREFIX
     - make
@@ -35,8 +35,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages {{ name }}  # [unix]
-    - conda inspect objects {{ name }}   # [osx]
 
 about:
   home: https://www.gnupg.org/software/ntbtls/index.html
