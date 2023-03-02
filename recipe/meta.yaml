@@ -52,4 +52,5 @@ about:
     ntbTLS is a good fit for accessing objects over the network.
 extra:
   recipe-maintainers:
+    - zklaus
     - mariusvniekerk
