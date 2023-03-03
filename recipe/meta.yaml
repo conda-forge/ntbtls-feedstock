@@ -10,9 +10,11 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://www.gnupg.org/ftp/gcrypt/{{ name }}/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
+  patches:
+    - autoreconf.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ntbtls') }}
@@ -23,8 +25,9 @@ requirements:
     - {{ compiler('cxx') }}
     - make  # [unix]
     - gnuconfig  # [unix]
+    - pkg-config  # [unix]
   host:
-    - libgpg-error <1.46
+    - libgpg-error
     - libksba
     - libgcrypt
     - zlib
