@@ -10,6 +10,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://www.gnupg.org/ftp/gcrypt/{{ name }}/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
+  patches:
+    - autoreconf.patch
 
 build:
   number: 0
