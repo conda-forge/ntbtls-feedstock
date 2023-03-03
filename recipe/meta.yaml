@@ -25,7 +25,7 @@ requirements:
     - make  # [unix]
     - gnuconfig  # [unix]
   host:
-    - libgpg-error <1.46
+    - libgpg-error
     - libksba
     - libgcrypt
     - zlib
