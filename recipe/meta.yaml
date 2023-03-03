@@ -25,6 +25,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make  # [unix]
+    - gnuconfig  # [unix]
   host:
     - libgpg-error
     - libksba
