@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ntbtls-feedstoc
 
 Home: https://www.gnupg.org/software/ntbtls/index.html
 
-Package license: LGPL-3
+Package license: GPL-3.0-or-later
 
 Summary: Not Too Bad TLS
 
