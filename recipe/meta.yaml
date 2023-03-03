@@ -13,10 +13,6 @@ source:
 
 build:
   number: 0
-  script:
-    - ./configure --prefix=$PREFIX
-    - make
-    - make install
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ntbtls') }}
