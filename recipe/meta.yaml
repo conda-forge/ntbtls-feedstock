@@ -1,6 +1,6 @@
 {% set name = "ntbtls" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "8922181fef523b77b71625e562e4d69532278eabbd18bc74579dbe14135729ba" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "bdfcb99024acec9c6c4b998ad63bb3921df4cfee4a772ad6c0ca324dbbf2b07c" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - autoreconf.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ntbtls') }}
